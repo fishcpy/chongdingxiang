@@ -2,10 +2,20 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=http://zzz.fishcpy.us.kg">
     <title>页面重定向</title>
+    <script>
+        // 使用JavaScript实现自动重定向
+        function redirect() {
+            window.location.href = "http://zzz.fishcpy.us.kg";
+        }
+        
+        // 设置延迟执行重定向，例如5秒后重定向
+        setTimeout(redirect, 5000);
+    </script>
 </head>
 <body>
-    <p>正在为您重定向，请稍等...</p>
+    <p>正在为您重定向，请稍等... 如果没有自动跳转，请手动点击这里：
+        <a href="http://zzz.fishcpy.us.kg" onclick="redirect(); return false;">点击这里</a>
+    </p>
 </body>
 </html>
